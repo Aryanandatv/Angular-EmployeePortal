@@ -1,0 +1,44 @@
+<div class="w-100 row">
+    <div class="col-2">
+        <div style="height: 93vh;" class="bg-dark pt-5">
+            <div>
+                <h5  class="text-center">
+                    <a routerLink="/home" class="text-light text-decoration-none ">Home</a>
+                </h5>
+                <h5 class="text-center mt-5">      
+                  <a routerLink="/employee" class="text-light text-decoration-none">Employee</a>
+                </h5>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-link text-danger" (click)="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-10 p-2 row">
+        <div class="col-8">
+            <div class="d-flex justify-content-center p-5" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwsTztFgwph1RQBitbCPI6POHSuJf52hU5XQ&s');">
+                <h2 class="text-dark">Welcome Admin !</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                  <app-calender></app-calender>
+                </div>
+                <div class="col">
+                  <app-chart></app-chart>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div style="height: 400px;">
+               <app-profile></app-profile>
+            </div>
+            <div class="p-5 text-dark" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwsTztFgwph1RQBitbCPI6POHSuJf52hU5XQ&s');">
+                <h2>Employee Count</h2>
+            </div>
+            
+
+        </div>
+       
+
+    </div>
+</div>
